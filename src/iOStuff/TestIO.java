@@ -16,5 +16,14 @@ public class TestIO {
 		sum += input2.nextInt();
 		}
 		System.out.println("Sum= " + sum);
+		
+		//d
+		int counter = 0;
+		while(input2.hasNext()){
+			counter++;
+			if(counter%5 == 0){
+				System.out.println(input2.nextInt());
+			}
+		}
 	}
 }
