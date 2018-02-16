@@ -16,5 +16,13 @@ public class TestIO {
 		sum += input2.nextInt();
 		}
 		System.out.println("Sum= " + sum);
+		
+		//Display ODD Numbers
+		while (input2.hasNext())
+		{
+			if (input2.nextInt() % 2 == 1){
+				System.out.println(input2.nextInt());
+			}
+		}
 	}
 }
