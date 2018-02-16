@@ -16,5 +16,15 @@ public class TestIO {
 		sum += input2.nextInt();
 		}
 		System.out.println("Sum= " + sum);
+		
+		//e
+		Scanner input7 = new Scanner(fileName);
+		while (input7.hasNext())
+		{
+			int next = input7.nextInt();
+		if(next%3==0){
+			System.out.println(next);
+		}
+		}
 	}
 }
