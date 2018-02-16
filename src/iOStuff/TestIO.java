@@ -24,14 +24,15 @@ public class TestIO {
 				System.out.println(input2.nextInt());
 			}
 		}
+		input2.close();
 		
 		//d
-		Scanner input5 = new Scanner(fileName);
+		input2 = new Scanner(fileName);
 		int counter = 0;
-		while(input5.hasNext()){
+		while(input2.hasNext()){
 			counter++;
 			if(counter%5 == 0){
-				System.out.println(input5.nextInt());
+				System.out.println(input2.nextInt());
 			}
 		}
 	}
