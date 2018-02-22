@@ -15,21 +15,53 @@ public class TestIO {
 		{
 		sum += input2.nextInt();
 		}
+		System.out.println("Sum");
 		System.out.println("Sum= " + sum);
 		input2.close();
+		System.out.println();
 		
-		//Display ODD Numbers
+		//a
+		input2 = new Scanner(fileName);
+		System.out.println("Print all");
 		while (input2.hasNext())
 		{
-			if (input2.nextInt() % 2 == 1){
-				System.out.println(input2.nextInt());
+			System.out.println(input2.nextLine());
+		}
+		input2.close();
+		System.out.println();
+		
+		//b
+		input2 = new Scanner(fileName);
+		int number =0;
+		System.out.println("Evens");
+		while(input2.hasNext())
+		{
+			number = input2.nextInt();
+			if (number % 2 == 0){
+				System.out.println(number);
 			}
 		}
 		input2.close();
+		System.out.println();
+		
+		//c
+		int odd = 0;
+		input2 = new Scanner(fileName);
+		System.out.println("Odds");
+		while (input2.hasNext())
+		{
+			odd=input2.nextInt();
+			if (odd % 2 == 1){
+				System.out.println(odd);
+			}
+		}
+		input2.close();
+		System.out.println();
 		
 		//d
 		input2 = new Scanner(fileName);
 		int counter = 0;
+		System.out.println("Every fifth");
 		while(input2.hasNext()){
 			counter++;
 			int temp = input2.nextInt();
@@ -37,12 +69,15 @@ public class TestIO {
 				System.out.println(temp);
 			}
 		}
+		input2.close();
+		System.out.println();
 		
 		//e
-		Scanner input7 = new Scanner(fileName);
-		while (input7.hasNext())
+		input2 = new Scanner(fileName);
+		System.out.println("Mults of 3");
+		while (input2.hasNext())
 		{
-			int next = input7.nextInt();
+			int next = input2.nextInt();
 		if(next%3==0){
 			System.out.println(next);
 		}
