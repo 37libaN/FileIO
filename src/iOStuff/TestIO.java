@@ -16,6 +16,7 @@ public class TestIO {
 		sum += input2.nextInt();
 		}
 		System.out.println("Sum= " + sum);
+		input2.close();
 		
 		//Display ODD Numbers
 		while (input2.hasNext())
@@ -31,8 +32,9 @@ public class TestIO {
 		int counter = 0;
 		while(input2.hasNext()){
 			counter++;
+			int temp = input2.nextInt();
 			if(counter%5 == 0){
-				System.out.println(input2.nextInt());
+				System.out.println(temp);
 			}
 		}
 	}
