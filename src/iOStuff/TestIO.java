@@ -17,6 +17,16 @@ public class TestIO {
 		}
 		System.out.println("Sum= " + sum);
 		input2.close();
+		
+		//Display ODD Numbers
+		while (input2.hasNext())
+		{
+			if (input2.nextInt() % 2 == 1){
+				System.out.println(input2.nextInt());
+			}
+		}
+		input2.close();
+		
 		//d
 		input2 = new Scanner(fileName);
 		int counter = 0;
